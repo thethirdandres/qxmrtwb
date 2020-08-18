@@ -3,24 +3,83 @@
 /* global */
 
 
-/* MOBILE CSS */
+/**************** MOBILE CSS ************/
 @media only screen and (max-width: 480px) {
+
 /* ============== NAVIGATION SECTION ============== */
 .navigation-section {
-
+  box-shadow: 0px 4px 10px #0000000D;
 }
 
 .navigation-logo {
+  position: relative;
+  margin: 5% 0% -10% 5%;
 }
+
+
+/* ============ HOME SECTION ============ */
+.home-section {
+  /* overflow-x: hidden; */
+  height: 100%;
+  padding-left: 10%;
+}
+
+.hs-a {
+  position: relative;
+  top: 30%;
+}
+
+.hs-a-vector-background {
+  position: absolute;
+  right: 0%;
+  z-index: ;
+}
+
+
+
+
 
 }
 
-/* DESKTOP CSS */
+/************** DESKTOP CSS *************/
 @media only screen and (min-width: 768px) {
 
 }
 
-/* GLOBAL */
+/************* GLOBAL *************/
+html {
+  scroll-behavior: smooth;
+}
+
+
+.App {
+  background-color: green;
+}
+
+.App main {
+  margin-top: 10%;
+}
+
 .container-fluid {
   padding: 0 !important;
+}
+
+/* Colors */
+:root {
+  --main-white: #FFFFFF;
+  --main-blue: #0067A3;
+  --main-yellow: #F5CE02;
+  --main-black: #333333;
+}
+
+/* Font Faces */
+@font-face {
+  font-family: Denmark;
+  src: url(Library/font/denmark.TTF);
+  font-display: swap;
+}
+
+/* Font Components */
+.denmark-regular {
+  font: Denmark 1rem;
 }
