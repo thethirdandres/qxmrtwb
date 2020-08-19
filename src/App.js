@@ -12,7 +12,9 @@ class App extends React.Component {
     return (
       <div className="App container-fluid">
         <Router>
-          <Navigation />
+          <nav>
+            <Navigation />
+          </nav>
           {/* <ToggleNavigation /> */}
           <main>
 

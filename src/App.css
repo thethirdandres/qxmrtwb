@@ -4,11 +4,11 @@
 
 
 /**************** MOBILE CSS ************/
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) { */
 
 /* ============== NAVIGATION SECTION ============== */
 .navigation-section {
-  box-shadow: 0px 4px 10px #0000000D;
+  box-shadow: 0px 0px 10px #0000000D;
 }
 
 .navigation-logo {
@@ -39,7 +39,14 @@
 
 
 
-}
+
+
+
+
+
+
+
+/* } */
 
 /************** DESKTOP CSS *************/
 @media only screen and (min-width: 768px) {
@@ -47,29 +54,13 @@
 }
 
 /************* GLOBAL *************/
-html {
-  scroll-behavior: smooth;
-}
-
-
-.App {
-  background-color: green;
-}
-
-.App main {
-  margin-top: 10%;
-}
-
-.container-fluid {
-  padding: 0 !important;
-}
 
 /* Colors */
 :root {
   --main-white: #FFFFFF;
+  --main-black: #333333;
   --main-blue: #0067A3;
   --main-yellow: #F5CE02;
-  --main-black: #333333;
 }
 
 /* Font Faces */
