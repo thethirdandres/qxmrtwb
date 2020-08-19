@@ -32,7 +32,7 @@ class Home extends React.Component {
                         </div>
                     </div>
                     <div className="hs-c-button  opensans-regular scale-up-bl">
-                        <a href="">Other Products ➜</a>
+                        <a href="/">Other Products ➜</a>
                     </div>
                 </div>
                 <div className="hs-d">
