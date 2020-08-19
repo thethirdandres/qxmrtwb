@@ -29,7 +29,7 @@ class Navigation extends React.Component {
 
     render() {
         return (
-        <div id="outer-container" className="navigation-section">
+        <div id="outer-container" className="">
             <Menu pageWrapId={"page-wrap"} outerContainerId={"outer-container"} width={'100%'} >
                 <Link to="/" onClick={() => this.closeMenu()}>
                     <img className="navigation-logo" src={require('../Library/img/main/logo.jpg')} />

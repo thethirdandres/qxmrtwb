@@ -12,7 +12,7 @@ class App extends React.Component {
     return (
       <div className="App container-fluid">
         <Router>
-          <nav>
+          <nav className="navigation-section   position-fixed bg-white">
             <Navigation />
           </nav>
           {/* <ToggleNavigation /> */}

@@ -13,7 +13,7 @@ body, html {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f7f7f7 !important;
+  background-color: #FFFFFF !important;
 }
 
 #root, .App, .App>main, .container-fluid
@@ -21,7 +21,6 @@ body, html {
  height:100% !important;
  width: 100% !important;
 }
-
 
 html {
   scroll-behavior: smooth;
