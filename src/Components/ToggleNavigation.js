@@ -3,43 +3,35 @@ import {Link} from 'react-router-dom';
 import {fallDown as Menu} from 'react-burger-menu';
 
 class ToggleNavigation extends React.Component {
-    constructor (props) {
-        super(props)
-        this.state = {
-            menuOpen: false
-        }
+    constructor(props) {
+        super(props);
+        this.openNav = this.openNav.bind(this);
+        this.closeNav = this.closeNav.bind(this);
     }
-
-    handleStateChange(state) {
-        this.setState({menuOpen: state.isOpen})
+    
+    openNav() {
+        document.getElementById("myNav").style.height = "75%";
     }
-
-    closeMenu() {
-        this.setState({menuOpen: false})
-    }
-
-    toggleMenu() {
-        this.setState(state => ({menuOpen: !state.menuOpen}))
-    }
-
-
-    showSettings (event) {
-        event.preventDefault();
+    
+    closeNav() {
+        document.getElementById("myNav").style.height = "0%";
     }
 
     render() {
         return (
-        <div id="outer-container" className="">
-            <Menu className={'toggle-navigation-wrapper'} pageWrapId={"page-wrap"} outerContainerId={"outer-container"} right disableAutoFocus width={'100%'} onStateChange={(state) => this.handleStateChange(state)}>
-                <div id="page-wrap">
-                    <div><a onClick={() => this.closeMenu()} href="/">HOME</a></div>
-                    <div><a onClick={() => this.closeMenu()} href="/store-locator">STORE LOCATOR</a></div>
-                    <div><a onClick={() => this.closeMenu()} href="/products">PRODUCTS</a></div>
-                    <div><a onClick={() => this.closeMenu()} href="/about">ABOUT</a></div>
-                    <div><a onClick={() => this.closeMenu()} href="/contact">CONTACT</a></div>
+        <nav className="toggle-navigation-section">
+            <div id="myNav" className="overlay">
+                <span className="closebtn" onClick={this.closeNav}>&times;</span>
+                <div className="overlay-content">
+                    <a className="opensans-regular" href="/">Home</a>
+                    <a className="opensans-regular" href="/store-locator">Store Locator</a>
+                    <a className="opensans-regular" href="/products">Products</a>
+                    <a className="opensans-regular" href="/about">About</a>
+                    <a className="opensans-regular" href="/contact">Contact</a>
                 </div>
-            </Menu>
-        </div>
+            </div>
+            <img className="hamburger-icon" src={require("../Library/img/main/hamburger-icon.png")} onClick={this.openNav} />
+        </nav>
         )
     }
 }

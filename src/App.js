@@ -17,8 +17,8 @@ class App extends React.Component {
             <Navigation />
           </nav>
           
+          <ToggleNavigation />
           <main>
-            <ToggleNavigation className="fixed-top" />
             <Switch>
               <Route exact path="/"> <Home /> </Route>
             </Switch>
