@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Navigation from './Components/Navigation.js';
 import ToggleNavigation from './Components/ToggleNavigation.js';
 import Home from './Components/Home.js';
+import Footer from './Components/Footer.js';
 
 class App extends React.Component {
   render() {
@@ -15,13 +16,14 @@ class App extends React.Component {
           <nav className="navigation-section   position-fixed bg-white">
             <Navigation />
           </nav>
-          {/* <ToggleNavigation /> */}
+          
           <main>
-
+            <ToggleNavigation className="fixed-top" />
             <Switch>
               <Route exact path="/"> <Home /> </Route>
             </Switch>
           </main>
+          {/* <Footer className="footer-section"/> */}
         </Router>
       </div>
     );

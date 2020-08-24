@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {fallDown as Menu} from 'react-burger-menu';
 
-class Navigation extends React.Component {
+class ToggleNavigation extends React.Component {
     constructor (props) {
         super(props)
         this.state = {
@@ -30,18 +30,18 @@ class Navigation extends React.Component {
     render() {
         return (
         <div id="outer-container" className="">
-            <Menu pageWrapId={"page-wrap"} outerContainerId={"outer-container"} width={'100%'} >
-                <Link to="/" onClick={() => this.closeMenu()}>
-                    <img className="navigation-logo" src={require('../Library/img/main/logo.jpg')} />
-                </Link>
-
-                <nav id="page-wrap" className="nav navbar bg-dark" c="container-fluid fixed-top bg-dark">
-                    
-                </nav>
+            <Menu className={'toggle-navigation-wrapper'} pageWrapId={"page-wrap"} outerContainerId={"outer-container"} right disableAutoFocus width={'100%'} onStateChange={(state) => this.handleStateChange(state)}>
+                <div id="page-wrap">
+                    <div><a onClick={() => this.closeMenu()} href="/">HOME</a></div>
+                    <div><a onClick={() => this.closeMenu()} href="/store-locator">STORE LOCATOR</a></div>
+                    <div><a onClick={() => this.closeMenu()} href="/products">PRODUCTS</a></div>
+                    <div><a onClick={() => this.closeMenu()} href="/about">ABOUT</a></div>
+                    <div><a onClick={() => this.closeMenu()} href="/contact">CONTACT</a></div>
+                </div>
             </Menu>
         </div>
         )
     }
 }
 
-export default Navigation;
+export default ToggleNavigation;
