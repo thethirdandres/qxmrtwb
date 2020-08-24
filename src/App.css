@@ -61,6 +61,7 @@
   right: .15em;
   top: -.4em;
   font-size: 3em;
+  color: var(--main-white);
 }
 
 .hamburger-icon {
@@ -74,9 +75,20 @@
 
 /* ============== FOOTER SECTION ============= */
 .footer-section {
-  /* position: sticky; */
-  bottom: -10rem;
-  height: 2.5rem;
+  position: relative;
+  bottom: 6rem;
+  height: 6rem;
+  background-color: var(--main-blue);
+}
+
+.footer-section-logo {
+  height: 2em;
+  width: 4.5em;
+  margin-bottom: 1.5em;
+}
+
+.footer-contact-info {
+  color: var(--main-yellow);
 }
 
 
@@ -275,6 +287,11 @@
 .montserrat-regular-small {
   font: .7em Montserrat, serif;
   color: var(--main-black);
+}
+
+.montserrat-regular-small-white {
+  font: .4em Montserrat, serif;
+  color: var(--main-white);
 }
 
 .opensans-bold {
