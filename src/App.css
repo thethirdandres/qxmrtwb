@@ -201,6 +201,13 @@
   box-shadow: none;
 }
 
+.hs-vector-background-c {
+  position: relative;
+  margin-top: -20%;
+  right: -16rem;
+  z-index: -1;
+}
+
 
 
 

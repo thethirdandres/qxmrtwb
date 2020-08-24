@@ -50,6 +50,7 @@ class Home extends React.Component {
                     <button className="hs-d-button   opensans-regular text-center"><a>Leave a Message  ➜</a></button>
                 </div>
                 <img className="hs-vector-background-b" src={require("../Library/img/home/vector-background-b.svg")} />
+                <img className="hs-vector-background-c" src={require("../Library/img/home/vector-background-c.svg")} />
             </section>
         )
     }
