@@ -7,6 +7,7 @@ import Navigation from './Components/Navigation.js';
 import ToggleNavigation from './Components/ToggleNavigation.js';
 import Home from './Components/Home.js';
 import Footer from './Components/Footer.js';
+import StoreLocator from './Components/StoreLocator';
 
 class App extends React.Component {
   render() {
@@ -21,6 +22,7 @@ class App extends React.Component {
           <main>
             <Switch>
               <Route exact path="/"> <Home /> </Route>
+              <Route exact path="/store-locator"> <StoreLocator /> </Route>
             </Switch>
             <Footer />
           </main>

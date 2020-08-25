@@ -1,4 +1,5 @@
 import React from 'react';
+import Messenger from 'react-messenger-customer-chat';
 
 class Home extends React.Component {
     render() {
@@ -7,7 +8,7 @@ class Home extends React.Component {
                 <div className="hs-a">
                     <div className="hs-a-title   denmark-regular">WE ARE <br/> OPEN 24/7!</div>
                     <div className="hs-a-subtitle   montserrat-regular">Being true to our name, we are ready to serve you real quick! From our basic commodities to an extensive line of food items, we got it here!</div>
-                    <button className="hs-a-button   opensans-regular    text-center align-center"><a>Check stores  ➜</a></button>
+                    <button className="hs-a-button   opensans-regular    text-center align-center"><a href="/store-locator">Check stores  ➜</a></button>
                 </div>
                 <img className="hs-vector-background-a" src={require("../Library/img/home/vector-background-a.svg")} />
                 <div className="hs-b">
@@ -47,6 +48,7 @@ class Home extends React.Component {
 
                         <div className="hs-d-footnote text-center">Suggestions, comments or feedbacks are highly appreciated. Please provide your name and message. <br/> We’d like to hear from you!</div>
                     </div>
+                    {/* <Messenger /> */}
                     <button className="hs-d-button   opensans-regular text-center"><a>Leave a Message  ➜</a></button>
                 </div>
                 <img className="hs-vector-background-b" src={require("../Library/img/home/vector-background-b.svg")} />

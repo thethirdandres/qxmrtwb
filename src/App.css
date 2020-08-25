@@ -222,6 +222,42 @@
 
 
 
+/* ============ STORE-LOCATOR SECTION ==============*/
+.store-locator-section   {
+  height: 100%;
+  padding: 20%;
+}
+
+.slc-title {
+  margin-top: 20%;
+}
+
+.slc-search-title {
+  margin-top: 3rem;
+  color: grey !important;
+}
+
+.slc-search-bar {
+  margin-top: .5rem;
+  width: 100%;
+  /* background-color: rgba(128, 128, 128, 0.267); */
+  /* border: .00000001rem solid black; */
+}
+
+.slc-map {
+  /* background-color: hotpink; */
+  margin-top: 1rem;
+  width: 90%;
+  height: 40%;
+  position: absolute;
+  right: 0px;
+  transform: translateX(-5%);
+}
+
+.slc-map > iframe {
+  height: 100%;
+  width: 100%;
+}
 
 
 

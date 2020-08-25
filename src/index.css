@@ -26,15 +26,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-.App {
-  /* background-color: green; */
-}
-
-.App>main {
-  /* padding-top: -20%; */
-}
-
 .App>nav {
   position: absolute;
   width: 100%;
