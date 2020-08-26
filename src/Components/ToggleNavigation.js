@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {fallDown as Menu} from 'react-burger-menu';
+
 
 class ToggleNavigation extends React.Component {
     constructor(props) {
@@ -27,7 +27,7 @@ class ToggleNavigation extends React.Component {
                     <a className="opensans-regular" href="/store-locator">Store Locator</a>
                     <a className="opensans-regular" href="/products">Products</a>
                     <a className="opensans-regular" href="/about">About</a>
-                    <a className="opensans-regular" href="/contact">Contact</a>
+                    <Link to="/#contact" className="opensans-regular">Contact</Link>
                 </div>
             </div>
             <img className="hamburger-icon" src={require("../Library/img/main/hamburger-icon.png")} onClick={this.openNav} />

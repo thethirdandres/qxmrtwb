@@ -1,5 +1,6 @@
 import React from 'react';
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+// import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import Map from './Map.js';
 
 class StoreLocator extends React.Component {
     constructor(props) {
@@ -16,29 +17,28 @@ class StoreLocator extends React.Component {
     render() {
         return (
             <section className="store-locator-section text-center">
-                <div className="slc-title   text-center denmark-regular">
+                <div className="sls-title   text-center denmark-regular">
                     STORE LOCATOR
                 </div>
-                <div className="slc-search-title   text-center montserrat-regular-small">
+                {/* <div className="sls-search-title   text-center montserrat-regular-small">
                     Enter your location
                 </div>
                 <form onSubmit={this.updateQuery}>
-                    <input id="map-search-query" type="text" className="slc-search-bar   text-center" name="search" />
-                </form>
-                <div className="slc-map">
-                    <iframe id=""allowFullScreen="false" src={this.state.query}></iframe>
-
-                    {/* <Map google={this.props.google} zoom={15}>
+                    <input id="map-search-query" type="text" className="sls-search-bar   text-center" name="search" />
+                </form> */}
+                {/* <div className="sls-map"> */}
+                    {/* <iframe id=""allowFullScreen="false" src={require("../Library/img/main/ss-map.png")}></iframe> */}
+                    {/* <Map google={this.props.google} zoom={14}>
                         <Marker onClick={this.onMarkerClick}
                                 name={'Current location'} />
-                
                         <InfoWindow onClose={this.onInfoWindowClose}>
                             <div>
-                                <h1>{this.state.selectedPlace.name}</h1>
+                            <h1>{this.state.selectedPlace.name}</h1>
                             </div>
                         </InfoWindow>
                     </Map> */}
-                </div>
+                {/* </div> */}
+                <Map className="sls-map"/>
             </section>
         )
     }

@@ -9,6 +9,8 @@ import Home from './Components/Home.js';
 import Footer from './Components/Footer.js';
 import StoreLocator from './Components/StoreLocator';
 
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+
 class App extends React.Component {
   render() {
     return (

@@ -36,7 +36,7 @@ class Home extends React.Component {
                         <a href="/">Other Products ➜</a>
                     </div>
                 </div>
-                <div className="hs-d">
+                <div id="contact" className="hs-d">
                     <div className="hs-d-title   denmark-regular text-right">GET IN TOUCH</div>
                     <div className="hs-d-main   montserrat-regular-small">
                         <b>HEAD OFFICE: Waffle Time Inc.</b><br/><br/>
