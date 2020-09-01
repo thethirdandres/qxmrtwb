@@ -225,7 +225,7 @@
 /* ============ STORE-LOCATOR SECTION ==============*/
 .store-locator-section   {
   height: 1200px;
-  padding: 20%;
+  padding-top: 20%;
 }
 
 .sls-title {
@@ -233,7 +233,6 @@
 }
 
 .sls-search-title {
-  margin-top: 3rem;
   color: grey !important;
 }
 
@@ -257,7 +256,25 @@
 
 .map-section {
   margin-top: 1rem;
-  /* heig */
+  width: 95%;
+  position: relative;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  transform: translateX(3%);
+}
+
+.sls-results {
+  width: 100%;
+  height: 50%;
+  padding-top: 3rem;
+  position: relative;
+  left: 0%;
+  overflow: scroll;
+  box-shadow: 1px 6px 20px 0px black;
+}
+
+.show-directions {
+  font: red;
 }
 
 
@@ -321,9 +338,27 @@
   color: var(--main-black);
 }
 
+.montserrat-regular-bold {
+  font: 1em Montserrat, serif;
+  color: var(--main-black);
+  font-weight: bolder;
+}
+
 .montserrat-regular-small {
   font: .7em Montserrat, serif;
   color: var(--main-black);
+}
+
+.montserrat-regular-small-red {
+  font: .7em Montserrat, serif;
+  color: red;
+  font-weight: bolder;
+}
+
+.montserrat-regular-small-bold {
+  font: .7em Montserrat, serif;
+  color: var(--main-black);
+  font-weight: bold;
 }
 
 .montserrat-regular-small-white {
