@@ -6,8 +6,8 @@ class Home extends React.Component {
         return (
             <section className="home-section" >
                 <div className="hs-a">
-                    <div className="hs-a-title   denmark-regular">WE ARE <br/> OPEN 24/7!</div>
-                    <div className="hs-a-subtitle   montserrat-regular">Being true to our name, we are ready to serve you real quick! From our basic commodities to an extensive line of food items, we got it here!</div>
+                    <div className="hs-a-title   denmark-regular">WE ARE <br className="d-inline d-md-none"/> OPEN 24/7!</div>
+                    <div className="hs-a-subtitle   montserrat-regular ">Being true to our name, we are ready to serve you real quick! From our basic commodities to an extensive line of food items, we got it here!</div>
                     <button className="hs-a-button   opensans-regular    text-center align-center"><a href="/store-locator">Check stores  ➜</a></button>
                 </div>
                 <img className="hs-vector-background-a" src={require("../Library/img/home/vector-background-a.svg")} />
@@ -21,21 +21,21 @@ class Home extends React.Component {
                     </div>
                 </div>                
                 <div className="hs-c">
-                    <div className="hs-c-title   denmark-regular text-center">NOW SERVING</div>
-                    <div className="hs-c-img-group  d-flex flex-column justify-content-around align-items-center">
-                        <div className="d-flex mb-3">
-                            <img className="hs-b-ad mr-3" src={require("../Library/img/home/hdr1.jpg")}/>
-                            <img className="hs-b-ad" src={require("../Library/img/home/hdr2.jpg")}/>
+                        <div className="hs-c-title   denmark-regular text-center text-md-left">NOW SERVING</div>
+                        <div className="hs-c-img-group  d-flex flex-column justify-content-around align-items-center">
+                            <div className="d-flex mb-3">
+                                <img className="hs-b-ad mr-3" src={require("../Library/img/home/hdr1.jpg")}/>
+                                <img className="hs-b-ad" src={require("../Library/img/home/hdr2.jpg")}/>
+                            </div>
+                            <div className="d-flex  ">
+                                <img className="hs-b-ad mr-3" src={require("../Library/img/home/hdr3.jpg")}/>
+                                <img className="hs-b-ad" src={require("../Library/img/home/hdr4.jpg")}/>
+                            </div>
                         </div>
-                        <div className="d-flex  ">
-                            <img className="hs-b-ad mr-3" src={require("../Library/img/home/hdr3.jpg")}/>
-                            <img className="hs-b-ad" src={require("../Library/img/home/hdr4.jpg")}/>
+                        <div className="hs-c-button  opensans-regular scale-up-bl">
+                            <a href="">Other Products ➜</a>
                         </div>
                     </div>
-                    <div className="hs-c-button  opensans-regular scale-up-bl">
-                        <a href="/">Other Products ➜</a>
-                    </div>
-                </div>
                 <div id="contact" className="hs-d">
                     <div className="hs-d-title   denmark-regular text-right">GET IN TOUCH</div>
                     <div className="hs-d-main   montserrat-regular-small">

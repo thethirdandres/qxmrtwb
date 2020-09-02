@@ -2,6 +2,8 @@ import React from 'react';
 // import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import Map from './Map.js';
 
+import { FilterableContent } from 'react-filterable-content'
+
 const resultsContent = [
     {
         name: "Quix! Mart Mandurriao",
@@ -31,7 +33,7 @@ const resultsContent = [
     {
         name: "Quix! Mart Bolilao",
         address: "Jalandoni St, Brgy. Boliao, Mandurriao, Iloilo City, 5000 Iloilo",
-        link: "Jalandoni St, Brgy. Boliao, Mandurriao, Iloilo City, 5000 Iloilo"
+        link: "https://www.google.com/maps/dir//Quix!+Mart,+Jalandoni+St,+Brgy.+Boliao,+Mandurriao,+Iloilo+City,+5000+Iloilo/@10.7076896,122.5544997,14.75z/data=!4m8!4m7!1m0!1m5!1m1!1s0x33aee53bebce9a3b:0xf7652825014edfd8!2m2!1d122.5530004!2d10.7140099"
     },
     {
         name: "Quix! Mart Lopez Jaena",
@@ -95,7 +97,7 @@ const resultsContent = [
     },
     {
         name: "Quix! Mart Kalibo",
-        address: "J. Cardinal Sin Ave., Andagaw, Kalibo, Aklan, Kalibo, Aklan",
+        address: "J. Cardinal Sin Ave., Andagaw, Kalibo, Aklan",
         link: "https://www.google.com/maps/dir//Quix+Mart,+J.+Cardinal+Sin+Ave.,+Andagaw,+Kalibo,+Aklan,+Kalibo,+Aklan/@11.6984498,122.3478702,13.5z/data=!4m8!4m7!1m0!1m5!1m1!1s0x33a59d9d26694ea3:0x3754f4843300e557!2m2!1d122.3683341!2d11.7013921"
     },
     {
@@ -116,12 +118,21 @@ class StoreLocator extends React.Component {
     constructor(props) {
         super(props);
         this.state={
-            query: "https://www.google.com/maps/search/Quix+Mart/@10.7152455,122.516603,13z"
-        };
+           keyword: '',
+        }
+        this.onChange = this.onChange.bind(this);
+    }
+
+    onChange(event) {
+        if (event && event.target) {
+            const { value } = event.target;
+            this.setState({keyword:value});
+        }
     }
 
 
     render() {
+        let {keyword} = this.state;
         return (
             <section className="store-locator-section text-center">
                 <div className="sls-title   text-center denmark-regular">
@@ -129,23 +140,33 @@ class StoreLocator extends React.Component {
                 </div>
                 {/* <div className="sls-search-title   text-center montserrat-regular-small">
                     Enter your location
-                </div>
-                <form onSubmit={this.updateQuery}>
-                    <input id="map-search-query" type="text" className="sls-search-bar   text-center" name="search" />
-                </form> */}
+                </div> */}
+                
+                
                 <Map className="sls-map"/>
-                <ul className="sls-results    list-unstyled text-left px-4 mt-2 pb-5">
-                    {resultsContent.map((x) =>
-                        <li className="mb-5">
-                            <div className="montserrat-regular-bold mb-2">{x.name}</div>
-                            <div className="montserrat-regular-small w-75">{x.address}</div>
-                            <div className="mt-3 d-flex justify-content-between">
-                                <div className="montserrat-regular-small-bold">Open Now: Open 24 Hours</div>
-                                <a className="show-directions    montserrat-regular-small-red" href={x.link}>Show Directions</a>
-                            </div>
-                        </li>
-                    )}
-                </ul>
+                <div className="sls-search">
+                    <input 
+                        type={'text'}
+                        value={keyword}
+                        placeholder={'Enter location'}
+                        className="text-center mt-5 w-75" 
+                        onChange={this.onChange}
+                    />
+                    <FilterableContent keyword={keyword}>
+                        <ul className="sls-results    list-unstyled text-left px-4 mt-2 pb-5">
+                            {resultsContent.map((x) =>
+                                <li className="mb-5" filterable-group='true'>
+                                    <div className="montserrat-regular-bold mb-2">{x.name}</div>
+                                    <div className="montserrat-regular-small w-75">{x.address}</div>
+                                    <div className="mt-3 d-flex justify-content-between">
+                                        <div className="montserrat-regular-small-bold" filterable-ignore='true'>Open Now: Open 24 Hours</div>
+                                        <a className="show-directions    montserrat-regular-small-red" href={x.link} filterable-ignore='true'>Show Directions</a>
+                                    </div>
+                                </li>
+                            )}
+                        </ul>
+                    </FilterableContent>
+                    </div>
             </section>
         )
     }
