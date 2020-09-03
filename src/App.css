@@ -84,7 +84,7 @@
 .footer-section-logo {
   height: 2em;
   width: 4.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
 .footer-contact-info {
@@ -278,15 +278,45 @@
 /************** DESKTOP CSS *************/
 @media only screen and (min-width: 768px) {
 
+/* ============== FOOTER SECTION ============= */
+.footer-section {
+  height: 7rem;
+}
+
+.footer-section-logo {
+  height: 4em;
+  width: 9em;
+  margin-bottom: 0em;
+}
+
+.footer-section-info {
+  width: 40%;
+  bottom: 0rem;
+}
+
+.footer-contact-info {
+  color: var(--main-yellow);
+}
+
+/* FOOTER FONT */
+.montserrat-regular-small-white {
+  font: 1em Montserrat, serif !important;
+}
+
 /* ============ HOME SECTION ============ */
 .home-section {
-  height: 1500px;
+  height: 1700px;
   /* padding-left: 10%;
   overflow: hidden; */
 }
 
+.hs-a {
+  position: relative;
+  top: 15rem;
+}
+
 .hs-a-subtitle {
-  width: 75%;
+  width: 50%;
 }
 
 
@@ -299,17 +329,79 @@
 
 .hs-vector-background-b {
   position: relative;
-  margin-top: -50%;
-  left: -16rem;
+  margin-top: -40%;
+  left: -22rem;
   z-index: -1;
+}
+
+.hs-b {
+  position: absolute;
+  top: 45rem;
+  /* margin */
+}
+
+.hs-cd {
+  position: relative;
+  margin-top: 15%;
 }
 
 .hs-c {
   position: relative;
   top: 3rem;
-  margin-left: -10%;
+  margin-left: 0%;
 }
 
+.hs-c-button {
+  top: 1rem;
+  transition: all .2s ease-in-out;
+}
+
+.hs-c-button:hover {
+  transform: scale(1.1);
+}
+
+
+.hs-c-button>a:hover {
+  cursor: default;
+  text-decoration: none;
+}
+
+.hs-d {
+  position: relative;
+  top: 10rem;
+}
+
+.hs-d-title {
+  right: 0%;
+}
+
+.hs-d-footnote {
+  position: relative;
+  margin-left: -10%;
+  padding: 10%;
+  width: 80%;
+  margin-top: -3rem;
+}
+
+.hs-d-button {
+  position: relative;
+  top: 6rem;
+  left: 1.5rem;
+}
+
+
+.hs-vector-background-c {
+  position: relative;
+  margin-top: -20%;
+  right: 10rem;
+  z-index: -1;
+}
+
+
+.scale-up-bl {
+	-webkit-animation: none;
+	        animation: none;
+}
 
 }
 

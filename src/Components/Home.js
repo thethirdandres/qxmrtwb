@@ -19,25 +19,26 @@ class Home extends React.Component {
                         <img className="hs-b-ad" src={require("../Library/img/home/3.jpg")}/>
                         <img className="hs-b-ad" src={require("../Library/img/home/4.jpg")}/>
                     </div>
-                </div>                
-                <div className="hs-c">
-                        <div className="hs-c-title   denmark-regular text-center text-md-left">NOW SERVING</div>
-                        <div className="hs-c-img-group  d-flex flex-column justify-content-around align-items-center">
-                            <div className="d-flex mb-3">
-                                <img className="hs-b-ad mr-3" src={require("../Library/img/home/hdr1.jpg")}/>
-                                <img className="hs-b-ad" src={require("../Library/img/home/hdr2.jpg")}/>
+                </div>        
+                <div className="hs-cd    d-md-flex">
+                    <div className="hs-c   flex-shrink-1 mr-md-auto">
+                            <div className="hs-c-title   denmark-regular text-center text-md-left">NOW SERVING</div>
+                            <div className="hs-c-img-group  d-flex flex-column justify-content-around align-items-center">
+                                <div className="d-flex mb-3">
+                                    <img className="hs-b-ad mr-3" src={require("../Library/img/home/hdr1.jpg")}/>
+                                    <img className="hs-b-ad" src={require("../Library/img/home/hdr2.jpg")}/>
+                                </div>
+                                <div className="d-flex  ">
+                                    <img className="hs-b-ad mr-3" src={require("../Library/img/home/hdr3.jpg")}/>
+                                    <img className="hs-b-ad" src={require("../Library/img/home/hdr4.jpg")}/>
+                                </div>
                             </div>
-                            <div className="d-flex  ">
-                                <img className="hs-b-ad mr-3" src={require("../Library/img/home/hdr3.jpg")}/>
-                                <img className="hs-b-ad" src={require("../Library/img/home/hdr4.jpg")}/>
+                            <div className="hs-c-button  opensans-regular scale-up-bl">
+                                <a href="">Other Products ➜</a>
                             </div>
                         </div>
-                        <div className="hs-c-button  opensans-regular scale-up-bl">
-                            <a href="">Other Products ➜</a>
-                        </div>
-                    </div>
-                <div id="contact" className="hs-d">
-                    <div className="hs-d-title   denmark-regular text-right">GET IN TOUCH</div>
+                    <div id="contact" className="hs-d ">
+                    <div className="hs-d-title   denmark-regular text-right text-md-left">GET IN TOUCH</div>
                     <div className="hs-d-main   montserrat-regular-small">
                         <b>HEAD OFFICE: Waffle Time Inc.</b><br/><br/>
                         Door 4, Q.H.P. Business Center, Arsenal St.<br/> Iloilo City, 5000, Philippines <br/> <br/>
@@ -46,11 +47,12 @@ class Home extends React.Component {
                         <b>Customer Care:</b> 0918 9417 419 <br/>
                         <b>Email:</b> customercare@quix.ph<br/><br/><br/>
 
-                        <div className="hs-d-footnote text-center">Suggestions, comments or feedbacks are highly appreciated. Please provide your name and message. <br/> We’d like to hear from you!</div>
+                        <div className="hs-d-footnote text-center text-md-left">Suggestions, comments or feedbacks are highly appreciated. Please provide your name and message. <br/> We’d like to hear from you!</div>
                     </div>
                     {/* <Messenger /> */}
                     <button className="hs-d-button   opensans-regular text-center"><a>Leave a Message  ➜</a></button>
                 </div>
+            </div>         
                 <img className="hs-vector-background-b" src={require("../Library/img/home/vector-background-b.svg")} />
                 <img className="hs-vector-background-c" src={require("../Library/img/home/vector-background-c.svg")} />
             </section>
