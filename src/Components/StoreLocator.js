@@ -143,8 +143,8 @@ class StoreLocator extends React.Component {
                 </div> */}
                 
                 
-                <Map className="sls-map"/>
-                <div className="sls-search">
+                <Map className="sls-map   "/>
+                <div className="sls-search ">
                     <input 
                         type={'text'}
                         value={keyword}
@@ -166,7 +166,7 @@ class StoreLocator extends React.Component {
                             )}
                         </ul>
                     </FilterableContent>
-                    </div>
+                </div>
             </section>
         )
     }

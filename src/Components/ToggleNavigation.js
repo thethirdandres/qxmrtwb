@@ -19,7 +19,7 @@ class ToggleNavigation extends React.Component {
 
     render() {
         return (
-        <nav className="toggle-navigation-section">
+        <nav className="toggle-navigation-section d-block d-md-none">
             <div id="myNav" className="overlay">
                 <span className="closebtn" onClick={this.closeNav}>&times;</span>
                 <div className="overlay-content" onClick={this.closeNav}>
