@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 class Navigation extends React.Component {
     render() {
         return (
-            <nav className="navigation-section " className="nav navbar h-100">
+            <nav className="navigation-section nav navbar h-100">
                 <Link to="/" className="navigation-logo   ">
                     <img src={require('../Library/img/main/logo.jpg')} />
                 </Link>

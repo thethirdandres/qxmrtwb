@@ -15,7 +15,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App container-fluid">
-        <Router>
+        <Router basename="/qxmrtwb">
           <nav className="navigation-section   position-fixed bg-white">
             <Navigation />
           </nav>

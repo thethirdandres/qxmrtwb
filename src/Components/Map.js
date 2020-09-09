@@ -23,12 +23,6 @@ class Map extends React.Component {
       disableDefaultUI: true,
     };
 
-    const handleToggle = () => {
-      this.setState({
-        isOpen: !false
-      });
-    }
-
     const MapWithASearchBox = compose(
       withProps({
         googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyAJbpjI8KS7fzlHYDjIBeOL8TkPfEhXUSk&v=3.exp&libraries=geometry,drawing,places",

@@ -1,5 +1,5 @@
 import React from 'react';
-import Messenger from 'react-messenger-customer-chat';
+// import Messenger from 'react-messenger-customer-chat';
 
 class Home extends React.Component {
     render() {
@@ -33,12 +33,12 @@ class Home extends React.Component {
                             <div  className="hs-c-title   denmark-regular text-center text-md-left">NOW SERVING</div>
                             <div className="hs-c-img-group  d-flex flex-column justify-content-around align-items-center">
                                 <div className="d-flex mb-3">
-                                    <img className="hs-b-ad mr-3" src={require("../Library/img/home/hdr1.jpg")} />
-                                    <img className="hs-b-ad" src={require("../Library/img/home/hdr2.jpg")}/>
+                                    <img className="hs-c-ad mr-3" src={require("../Library/img/home/hdr1.jpg")} />
+                                    <img className="hs-c-ad" src={require("../Library/img/home/hdr2.jpg")}/>
                                 </div>
                                 <div className="d-flex  ">
-                                    <img className="hs-b-ad mr-3" src={require("../Library/img/home/hdr3.jpg")}/>
-                                    <img className="hs-b-ad" src={require("../Library/img/home/hdr4.jpg")}/>
+                                    <img className="hs-c-ad mr-3" src={require("../Library/img/home/hdr3.jpg")}/>
+                                    <img className="hs-c-ad" src={require("../Library/img/home/hdr4.jpg")}/>
                                 </div>
                             </div>
                             {/* <div className="hs-c-button  opensans-regular scale-up-bl">
@@ -58,7 +58,7 @@ class Home extends React.Component {
                         <div className="hs-d-footnote text-center text-md-left">Suggestions, comments or feedbacks are highly appreciated. Please provide your name and message. <br/> We’d like to hear from you!</div>
                     </div>
                     {/* <Messenger /> */}
-                    <button className="hs-d-button   opensans-regular text-center"><a>Leave a Message  ➜</a></button>
+                    {/* <button className="hs-d-button   opensans-regular text-center"><a>Leave a Message  ➜</a></button> */}
                 </div>
             </div>         
                 <img className="hs-vector-background-b" src={require("../Library/img/home/vector-background-b.svg")} />

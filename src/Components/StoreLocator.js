@@ -160,7 +160,7 @@ class StoreLocator extends React.Component {
                                     <div className="montserrat-regular-small w-75">{x.address}</div>
                                     <div className="mt-3 d-flex justify-content-between">
                                         <div className="montserrat-regular-small-bold" filterable-ignore='true'>Open Now: Open 24 Hours</div>
-                                        <a className="show-directions    montserrat-regular-small-red" href={x.link} filterable-ignore='true'>Show Directions</a>
+                                        <a className="show-directions    montserrat-regular-small-red" target="_blank" rel="noopener noreferrer" href={x.link} filterable-ignore='true'>Show Directions</a>
                                     </div>
                                 </li>
                             )}
