@@ -32,7 +32,7 @@ class Map extends React.Component {
     const MapWithASearchBox = compose(
       withProps({
         googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyAJbpjI8KS7fzlHYDjIBeOL8TkPfEhXUSk&v=3.exp&libraries=geometry,drawing,places",
-        loadingElement: <div style={{ height: `50vh` }} />,
+        loadingElement: <div style={{ height: `50vh`}} />,
         containerElement: <div style={{ height: `50vh` }} />,
         mapElement: <div style={{ height: `50vh` }} />,
       }),
@@ -180,11 +180,9 @@ class Map extends React.Component {
       </GoogleMap>
     );
     return (
-      <div className="map-section   row">
-        <div className="col-xl-5 col-lg-12 col-md-12 col-xs-12 col-sm-12 px-0">
-          <div ref="map" className="" id="map-size">
-            <MapWithASearchBox isMarkerShowns isMarkerShown MarkerShowns />
-          </div>
+      <div className="map-section">
+        <div ref="map" className="" id="map-size">
+          <MapWithASearchBox isMarkerShowns isMarkerShown MarkerShowns />
         </div>
 
         {/* <div id="outlet-section" className="col-xl-7 col-lg-12 col-md-12 col-xs-12 col-sm-12 px-0 pb-4">

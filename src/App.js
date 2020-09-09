@@ -27,6 +27,7 @@ class App extends React.Component {
               <Route exact path="/store-locator"> <StoreLocator /> </Route>
             </Switch>
             <Footer />
+            
           </main>
           {/* <Footer className="footer-section"/> */}
         </Router>

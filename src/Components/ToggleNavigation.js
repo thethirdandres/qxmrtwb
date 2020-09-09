@@ -25,8 +25,8 @@ class ToggleNavigation extends React.Component {
                 <div className="overlay-content" onClick={this.closeNav}>
                     <a className="opensans-regular" href="/">Home</a>
                     <a className="opensans-regular" href="/store-locator">Store Locator</a>
-                    <a className="opensans-regular" href="/products">Products</a>
-                    <a className="opensans-regular" href="/about">About</a>
+                    <a className="opensans-regular" href="/#products">Products</a>
+                    {/* <a className="opensans-regular" href="/about">About</a> */}
                     <a className="opensans-regular" href="/#contact">Contact</a>
                 </div>
             </div>

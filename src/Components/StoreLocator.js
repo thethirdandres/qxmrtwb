@@ -153,7 +153,7 @@ class StoreLocator extends React.Component {
                         onChange={this.onChange}
                     />
                     <FilterableContent keyword={keyword}>
-                        <ul className="sls-results    list-unstyled text-left px-4 mt-2 pb-5">
+                        <ul className="sls-results    list-unstyled text-left px-4 mt-2">
                             {resultsContent.map((x) =>
                                 <li className="mb-5" filterable-group='true'>
                                     <div className="montserrat-regular-bold mb-2">{x.name}</div>

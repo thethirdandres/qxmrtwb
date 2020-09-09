@@ -11,8 +11,8 @@ class Navigation extends React.Component {
                 <div className="mr-5 d-none d-md-block">
                     <a className="mr-5 opensans-regular-blue" href="/">Home</a>
                     <a className="mr-5 opensans-regular-blue" href="/store-locator">Store Locator</a>
-                    <a className="mr-5 opensans-regular-blue" href="/products">Products</a>
-                    <a className="mr-5 opensans-regular-blue" href="/about">About</a>
+                    <a className="mr-5 opensans-regular-blue" href="/#products">Products</a>
+                    {/* <a className="mr-5 opensans-regular-blue" href="/about">About</a> */}
                     <a className="mr-5 opensans-regular-blue" href="/#contact">Contact</a>
                 </div>
             </nav>
